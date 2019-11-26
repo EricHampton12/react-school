@@ -67,7 +67,7 @@ export default class Register extends Component {
                                 <input onChange={this.handleChange3} type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
                             </div>
                             <div className="form-group form-check">
-                                <button type="submit" onSubmit="/login" className="btn btn-info mb-3">Make Account
+                                <button type="submit" className="btn btn-info mb-3">Make Account
                                 </button>
                             </div>
                         </form>

@@ -6,11 +6,12 @@ class Login extends Component {
   constructor(props) {
     super(props);
     this.state = { email: '', password: '', token: '', user: null };
-
     this.handleChange1 = this.handleChange1.bind(this);
     this.handleChange2 = this.handleChange2.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
+
+ 
 
   handleChange1(e) {
     this.setState({
@@ -22,6 +23,8 @@ class Login extends Component {
       password: e.target.value
     })
   }
+
+  
   async handleSubmit(e) {
     e.preventDefault();
     const content = {
