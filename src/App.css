@@ -2,11 +2,14 @@
   text-align: center;
 }
 
-
-
 .container{
   opacity: .9;
 }
+
+.myContainer{
+  opacity: 1;
+}
+
 
 
 

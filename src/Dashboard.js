@@ -1,28 +1,52 @@
 import React, { Component } from 'react'
-import Home from './Home';
-import Register from './Register';
+import Logout from './Logout'
+import Modal from './Modal'
+import Grades from './Grades'
+
 
 export default class Dashboard extends Component {
-    constructor(props){
-        super(props);
-
-        this.setState = [];
-
-        function Greeting(props){
-            const isLoggedIn = props.isLoggedIn;
-            if(isLoggedIn){
-                return <Home />;
-            } else{
-                return <Register />
-            }
-        }
-    }
     render() {
-        
         return (
             <div>
-                
+                <div className="myContainer container-fluid bg-info">
+                    <div className="row">
+                        <div className="col-12">
+                            <h1 className="display-5 text-white">Dashboard</h1>
+                        
+
+                        </div>
+                    </div>
+                </div>
+                <div className="Container mt-3">
+                    <div className="row">
+                        <div className="col-12"><div className="card-group">
+                            <div className="card mt-2 mb-5 ml-1 mr-1">
+                                <div className="card-body">
+                                    <h5 className="card-title">Grade Lists</h5>
+                                    <p className="card-text">Click below for a list of grades, and the list of supplies needed.</p>
+                                </div>
+                                <div className="card-footer">
+                                    <a className="btn btn-info" href="/grades">Search Grades</a>
+                                   
+                                </div>
+                            </div>
+                            <div className="card ml-1 mr-1 mt-2 mb-5">
+                                <div className="card-body">
+                                    <h5 className="card-title">My Lists</h5>
+                                    <p className="card-text">My saved lists.</p>
+                                </div>
+                                <div className="card-footer">
+                                    <a className="btn btn-info" href="/mylist">View</a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
 }
+
+
+

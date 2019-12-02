@@ -1,0 +1,119 @@
+{
+    "data":[
+        {
+                "name":"Kindergarten",
+                "description": "this is kindergarten",
+                "supplies": [
+                    "12 Elmers Glue Sticks",
+                    "Box of 24 Crayola Crayons",
+                    "1 Crayola WaterColor Set",
+                    "Box of 8 Crayola Markers",
+                    "Scissors",
+                    "1 Box of Kleenex Tissues",
+                    "1 box of Ziplock baggies (either quart, gallon, or snack size)",
+                    "6 Expo Whiteboard Markers",
+                    "Container of Baby Wipes",
+                    "Colored Pencils"
+                ]
+        },
+        {
+                "name":"First Grade",
+                "description": "this is kindergarten",
+                "supplies": [
+                    "8 ct. Crayola Classic Thick Markers",
+                    "Red Plastic 3 prong pocket folder",
+                    "16 Elmer’s small Glue Sticks",
+                    "1, 175 ct Kleenex Brand Facial Tissue",
+                    "2 packages Baby wipes soft pack 80ct",
+                    "Box of Gallon sized resealable Ziploc Bags",
+                    "Box of sandwich-sized resealable plastic bags",
+                    "1 package of Expo black fine tip (THIN) whiteboard markers",
+                    "1 package of Expo black whiteboard markers (regular)",
+                    "1 Prang Washable Watercolor set with brush, 8 ct",
+                    "Box of 24 Ticonderoga no. 2 pencils",
+                    "2 Pink Bevel Eraser",
+                    "2 Crayola Crayons, 24 count",
+                    "Student scissors",
+                    "1 On the ear, adjustable band headphones"
+                ]
+        },
+        {
+                "name":"Second Grade",
+                "description": "this is kindergarten",
+                "supplies": [
+                    "1 Box of Kleenex Tissues",
+                    "1 Container of Baby Wipes",
+                    "1 One inch white 3 ring notebook with plastic front cover pockets",
+                    "2 Boxes of 24 Crayola Crayons",
+                    "Box of 24 #2 Ticonderoga Pencils",
+                    "1 package RED Papermate Pens",
+                    "2 Assorted Plastic prong folders",
+                    "1 pair of sharp student scissors",
+                    "10 Elmers glue sticks",
+                    "1 four ounce bottle of Elmers white glue",
+                    "1 box wide tip CRAYOLA Markers",
+                    "1 box CRAYOLA colored Pencils",
+                    "1 Crayola watercolor paint",
+                    "1 package of 12 (or more) Pencil Top erasers",
+                    "1 small, rectangular pink eraser",
+                    "1 plastic Pencil Box",
+                    "1 set of computer headphones",
+                    "1 Spiral Notebook",
+                    "1 Yellow Sharpie Highlighter",
+                    "3 packages of Expo Black dry erase markers",
+                    "1 box of ZipLoc Baggies: Sandwich size: or Snack Size"
+                ]
+            },
+            {
+                "name":"Third Grade",
+                "description": "this is kindergarten",
+                "supplies": [
+                    "1 Mead composition book",
+                    "3 packages of pencils (Ticonderoga Brand only)",
+                    "2 pack erasers",
+                    "1 set markers (8-10 ONLY)",
+                    "1 box crayons (24 ONLY)",
+                    "10 dry erase markers (thick EXPO, please)",
+                    "2 red pens",
+                    "2 glue sticks",
+                    "1 pair student scissors",
+                    "1 Pencil box (hard plastic 8 x 5 size)",
+                    "2 highlighters",
+                    "3, 2-pocket plastic folders (NOT PAPER) 1- green 1-blue 2-red",
+                    "1 Black Sharpie (fine point)",
+                    "2 boxes of Kleenex",
+                    "2 packages of baby wipes",
+                    "1, One inch binder (White ONLY-with plastic sleeve on the outside and the plastic pocket sleeves on the inside)",
+                    "1 pack of 5 binder tab dividers",
+                    "1 pack of wide ruled lined paper (200 sheets in the pack)",
+                    "1 computer headphones (no wireless-earbuds are perfect)"
+                ]
+            },
+            {
+                "name":"Fourth Grade",
+                "description": "this is kindergarten",
+                "supplies": [
+                    "1, 2 Pocket Homework Folder (student choice--not one of the colors listed below)",
+                    "1 Pack 3x5 notecards",
+                    "1 pack wide rule notebook paper",
+                    "1- 5 x 8 pencil box",
+                    "1 pair student scissors",
+                    "3 glue sticks (Elmers)",
+                    "2 pink erasers",
+                    "3 yellow Sharpie highlighters",
+                    "1 pack (10) red pens (Papermate or Bic)",
+                    "1, Fine Point, Black Sharpie Marker",
+                    "5 black whiteboard markers (Expo or Crayola)",
+                    "1, 12 pack colored pencils (Crayola)",
+                    "1 set of 8-10 markers (Crayola)",
+                    "2 packs pencils",
+                    "2 boxes of tissue (Kleenex Brand)",
+                    "1 package of baby wipes",
+                    "1 box of Ziploc bags ■ Sandwich Size ■Gallon Size ■ Snack Size",
+                    "1 small whiteboard eraser or clean sock",
+                    "Headphones or earbuds (to use with computers)",
+                    "4 Plastic , 2-pocket folders in the following colors: ○ Red ○ Blue ○ Yellow ○ Green"
+                ]
+            }
+    ]
+}
