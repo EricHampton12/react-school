@@ -10,26 +10,8 @@ class Login extends Component {
     this.handleChange1 = this.handleChange1.bind(this);
     this.handleChange2 = this.handleChange2.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    
-    
-    function LoginButton(props){
-      return (
-        <button onClick={props.onClick}>
-          Login
-        </button>
-      );
-    }
 
-    function LogoutButton(props) {
-      return (
-        <button onClick={props.onClick}>
-          Logout
-        </button>
-      )
-    }
   }
-
- 
 
   handleChange1(e) {
     this.setState({
@@ -42,7 +24,7 @@ class Login extends Component {
     })
   }
 
-  
+
   async handleSubmit(e) {
     e.preventDefault();
     const content = {
@@ -58,7 +40,8 @@ class Login extends Component {
           user: response.data.user
         })
         localStorage.setItem('user_token', response.data.token);
-        alert("You are logged in!");
+        this.props.GetToken()
+        // alert("You are logged in!");
       } else {
 
         alert("User Not Found");

@@ -6,6 +6,7 @@ export default class Logout extends Component {
 //        super(props);
 //        this.state = this.state
 //    }
+   
     
     logout() {
         const token = localStorage.getItem('user_token')
@@ -26,7 +27,7 @@ export default class Logout extends Component {
         return (
            
             <div>
-                <button className="btn btn-light" onClick={this.logout} href="/login" role="button">Logout
+                <button className="btn btn-info" onClick={this.logout} href="/login" role="button">Logout
                 </button>
             </div>
         )
