@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
+import App from './App';
 
 
 class Login extends Component {
@@ -9,6 +10,23 @@ class Login extends Component {
     this.handleChange1 = this.handleChange1.bind(this);
     this.handleChange2 = this.handleChange2.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    
+    
+    function LoginButton(props){
+      return (
+        <button onClick={props.onClick}>
+          Login
+        </button>
+      );
+    }
+
+    function LogoutButton(props) {
+      return (
+        <button onClick={props.onClick}>
+          Logout
+        </button>
+      )
+    }
   }
 
  
@@ -70,7 +88,9 @@ class Login extends Component {
             </div>
           </div><br />
           <div className="form-group">
-            <button className="btn mb-4 btn-info" href="/">Login</button>
+            <button className="btn mb-4 btn-info">
+              Login
+            </button>
           </div>
         </form>
       </div>
