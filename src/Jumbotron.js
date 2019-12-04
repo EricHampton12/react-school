@@ -9,7 +9,7 @@ export default class Jumbotron extends Component {
                     <p className="lead text-dark">Made Simple!</p>
                     <a className="btn btn-info text-light btn-md" href="/login" role="button">Login</a>
                     <a className="btn btn-info ml-4 text-light btn-md" href="/register" role="button">Register</a>
-                    <small> <p className="mt-3">An easier way to search school supplies for grades Kindergarten-4th Grade.</p></small>
+                    <small> <p className="mt-3">An easy way to search and save school supplies for grades Kindergarten-4th Grade.</p></small>
                 </div>
             </div>
         )

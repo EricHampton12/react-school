@@ -2,7 +2,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('/kindergarten.jpg');
+  background-image: url('/schoolkids.jpg');
   background-size: cover;
   background-repeat: no-repeat; 
 
@@ -15,5 +15,9 @@ code {
 
 .modal{
   overflow-y:auto;
+}
+
+.p{
+  font-weight: 400;
 }
 

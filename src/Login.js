@@ -40,6 +40,7 @@ class Login extends Component {
           user: response.data.user
         })
         localStorage.setItem('user_token', response.data.token);
+        localStorage.setItem('user', JSON.stringify(response.data.user));
         this.props.GetToken()
         // alert("You are logged in!");
       } else {

@@ -1,13 +1,13 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Home from './Home';
 import Register from './Register';
 import Login from './Login';
 import Logout from './Logout';
 import Dashboard from './Dashboard';
-import Grades from './Grades';
 import Footer from './Footer';
 import MyList from './MyList';
+import Grades from './Grades';
 
 import {
   BrowserRouter as Router,
@@ -16,9 +16,6 @@ import {
   Link,
   Redirect
 } from "react-router-dom";
-// import Navbar from './Navbar';
-// import Jumbotron from './Jumbotron';
-// import Login from './Login';
 
 class App extends React.Component {
   constructor(props){
@@ -54,50 +51,40 @@ class App extends React.Component {
                 </li>
                 <li className="nav-item">
                   <Link className="text-white" to="/dashboard">Dashboard</Link>
-                </li>
-                {/* <li className="nav-item">
-                  <Link className="text-white" to="/schoolSupplies">School Supplies</Link>
-
-                </li> */}
-                {/* <li className="nav-item">
-                  <Link className="text-white" to="/login">Login</Link>
-                </li> */}
-                
+                </li>  
                 <Logout /> 
-                {/* <li className="nav-item">
-                  <Link className="text-white" to="/register">Register</Link><hr></hr>
-                  {/* <a className="btn btn-sm btn-light" onClick="/login" role="button">Logout</a> */}
-                {/* </li> */}
+
               </ul>
             </div>
           </nav>
           <Switch>
             <Route exact path="/">
               <Home />
-
             </Route>
-            <Route path="/login">
-              
+            <Route path="/login">           
               {this.state.UserToken ? 
               <Redirect to="/dashboard" /> : 
               <Login GetToken={this.GetToken} />}
             </Route>
             <Route path="/register">
-              <Register />
+            {this.state.UserToken ? 
+              <Redirect to="/dashboard" /> :
+              <Register GetToken={this.GetToken} />}
             </Route>
             <Route path="/dashboard">
               <Dashboard />
             </Route>
-            <Route path="/grades">
-              <Grades />
-            </Route>
             <Route path="/mylist">
               <MyList />
+            </Route>
+            <Route path="/grades">
+              <Grades />
             </Route>
           </Switch>
         </div>
 
       </Router>
+      <Footer />
 
 
 
