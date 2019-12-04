@@ -13,9 +13,8 @@ export default class Logout extends Component {
                 'Authorization':"Bearer " + token
             }
         };
-        let uri = 'http://127.0.0.1:8000/api/logout';
+        let uri = 'https://backtoschool-260918.appspot.com/api/logout';
         axios.get(uri, content).then((response) => {
-            console.log(response.data);
             window.location.href="/login";
         });
         localStorage.removeItem('user_token');

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Jumbotron from './Jumbotron'
-import Footer from './Footer'
 
 class Home extends Component {
     constructor(props) {

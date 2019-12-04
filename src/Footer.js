@@ -9,7 +9,11 @@ function Footer() {
 
                 <div className='row'>
 
-                    <div className='col-12 text-white'></div>
+                    <div className='col-12 text-white text-center'>
+                        <p className="text-center">
+                      
+                        </p>
+                        </div>
 
                 </div>
             </div>

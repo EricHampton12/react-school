@@ -31,9 +31,8 @@ class Login extends Component {
       email: this.state.email,
       password: this.state.password
     }
-    let uri = 'http://127.0.0.1:8000/api/login';
+    let uri = 'https://backtoschool-260918.appspot.com/api/login';
     await axios.post(uri, content).then((response) => {
-      console.log(response.data);
       if (response.data != "") {
         this.setState({
           token: response.data.token,

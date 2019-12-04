@@ -36,10 +36,9 @@ class App extends React.Component {
   render() {
   return(
     <div className = "App" >
-    
       <Router>
         <div>
-          <nav className="navbar navbar-expand-lg navbar-light bg-info mt-1">
+          <nav className="navbar navbar-expand-lg navbar-light bg-info">
             <a className="navbar-brand text-white text-small" href="/">Back to School</a>
             <button className="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
@@ -53,7 +52,6 @@ class App extends React.Component {
                   <Link className="text-white" to="/dashboard">Dashboard</Link>
                 </li>  
                 <Logout /> 
-
               </ul>
             </div>
           </nav>
@@ -82,16 +80,12 @@ class App extends React.Component {
             </Route>
           </Switch>
         </div>
-
       </Router>
-      <Footer />
-
-
-
     </div >
   );
 }
 }
+
 
 
 export default App;

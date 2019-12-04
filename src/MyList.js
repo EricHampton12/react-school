@@ -3,8 +3,6 @@ import axios from 'axios';
 import SupplyData from '../src/supplies.json'
 import './style.scss';
 
-
-
 export default class MyList extends Component {
     constructor(props) {
         super(props);
@@ -21,9 +19,8 @@ export default class MyList extends Component {
             }
         }
         const data = { id: JSON.parse(localStorage.getItem('user')).id }
-        let uri = await 'http://127.0.0.1:8000/api/mylist/' + data.id;
+        let uri = await 'https://backtoschool-260918.appspot.com/api/mylist/' + data.id;
         axios.get(uri, content, data).then((response) => {
-            console.log(response.data);
             if (response.data != "") {
                 this.setState({
                     dbList: response.data
@@ -42,24 +39,20 @@ export default class MyList extends Component {
 
                     var supplies = obj.supplies;
                     return (
-                        <div className="container mt-2" key={index}>
+                        <div className="container mt-2 mb-2" key={index}>
                             <div className="card text-center">
                                 <div className="card-body">
                                     <h3>{name}</h3>
                                     <ul>
                                         {supplies.map((supply, idx) => {
                                             return (
-
-                                                <li key={idx} >
-                                                    
+                                                <li key={idx} >                                            
                                                         <div class="checkbox">
                                                             <label>
                                                                 <input type="checkbox" /><span className="checkbox-material mr-2"><span className="check"></span></span> {supply}
                                                             </label>
-                                                            </div>
-                                                            
-                                                    </li>
-                                                    
+                                                            </div>                                           
+                                                    </li>                                                   
                                                     )
                                                 })
                                             }

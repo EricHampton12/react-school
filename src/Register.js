@@ -34,16 +34,15 @@ export default class Register extends Component {
             email: this.state.email,
             password: this.state.password
         }
-        let uri = 'http://127.0.0.1:8000/api/register';
+        let uri = 'https://backtoschool-260918.appspot.com/api/register';
         axios.post(uri, content).then((response) => {
-            console.log(response.data);
             if (response.data != "") {
                 this.setState({
                     token: response.data.token,
                     user: response.data.user
                 })
                 localStorage.setItem('user_token', response.data.token);
-                localStorage.setItem('user', JSON.stringify(response.data.user));
+                        localStorage.setItem('user', JSON.stringify(response.data.user));
 
                 this.props.GetToken()
             }
@@ -63,7 +62,7 @@ export default class Register extends Component {
                                 <input onChange={this.handleChange2} type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
                             </div>
                             <div className="form-group">
-                                <input onChange={this.handleChange3} type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
+                                <input onChange={this.handleChange3} type="password" className="form-control" id="exampleInputPassword1" placeholder="Password (must be at least 8 characters)" />
                             </div>
                             <div className="form-group form-check">
 

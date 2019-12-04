@@ -24,14 +24,12 @@ export default class SupplyList extends Component {
             mylists: JSON.stringify(data),
             user_id: user.id
         }
-        let uri = 'http://127.0.0.1:8000/api/savelist';
-        // console.log(headers);
+        let uri = 'https://backtoschool-260918.appspot.com/api/savelist';
         axios.post(uri, content, config).then((response) => {
-            console.log(response.data);
         });
+        alert("Your list has been saved! Visit the Dashboard to view your saved lists.");
     }
     render() {
-        console.log(SupplyData);
         return (
             <div>
                 {SupplyData.data.map((supplyList, index) => {
@@ -50,6 +48,7 @@ export default class SupplyList extends Component {
                                         })}
                                     </ul>
                                     <button id={index} onClick={this.saveSupplyList} className="btn btn-info btn-sm ml-4">Save List</button>
+
                                 </div>
                             </div>
                         </>)
