@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Jumbotron from './Jumbotron'
-import Login from './Login'
+import Footer from './Footer'
 
 class Home extends Component {
     constructor(props) {
@@ -8,19 +8,12 @@ class Home extends Component {
         this.state = {};
 
     }
-
     render() {
-        // window.localStorage.getItem('user_token');
-        // if (localStorage.getItem("user_token") === null) {
-        //     //...
-        // }
-        // if it exists show the dashboard component
-        // if it doesn't exist show the normal 
         return (
             <div className="container mt-3 mb-2">
                 <div className="row">
                     <div className="col-12">
-                        <Jumbotron />
+                        <Jumbotron />   
                     </div>
                 </div>
 
@@ -28,4 +21,5 @@ class Home extends Component {
         )
     }
 }
+
 export default Home;

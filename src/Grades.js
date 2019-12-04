@@ -7,12 +7,10 @@ export default class Grades extends Component {
             <div className="container bg-light mt-3">
                 <div className="row">
                     <div className="col-12">
-                                <SupplyList />
-                             
-                        </div>
+                        <SupplyList />
                     </div>
                 </div>
-            // </div>
+            </div>
         )
     }
 }

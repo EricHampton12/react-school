@@ -1,86 +1,81 @@
 import React, { Component } from 'react'
-import { returnStatement } from '@babel/types';
+import axios from 'axios';
+import SupplyData from '../src/supplies.json'
+import './style.scss';
+
+
 
 export default class MyList extends Component {
     constructor(props) {
         super(props);
-
         this.state = {
-            newItem: "",
-            list: []
+            dbList: []
         }
     }
 
-    updateInput(key, value) {
-        this.setState({
-            [key]: value
+    async componentDidMount() {
+        const token = localStorage.getItem('user_token')
+        const content = {
+            headers: {
+                'Authorization': "Bearer " + token
+            }
+        }
+        const data = { id: JSON.parse(localStorage.getItem('user')).id }
+        let uri = await 'http://127.0.0.1:8000/api/mylist/' + data.id;
+        axios.get(uri, content, data).then((response) => {
+            console.log(response.data);
+            if (response.data != "") {
+                this.setState({
+                    dbList: response.data
+                })
+
+            }
         });
-    }
-
-    addItem() {
-        const newItem = {
-            id: 1 + Math.random(),
-            value: this.state.newItem.slice()
-        };
-
-        const list = [...this.state.list];
-
-        list.push(newItem);
-
-        this.setState({
-            list,
-            newItem: ""
-        });
-    }
-    deleteItem(id) {
-        const list = [...this.state.list];
-
-        const updatedList = list.filter(item => item.id !== id);
-
-        this.setState({ list: updatedList });
     }
     render() {
         return (
-            
+            this.state.dbList.length ?
+                this.state.dbList.map((item, index) => {
+                    var obj = JSON.parse(item);
+                    var name = obj.name;
+                    var desc = obj.description;
 
-            <div className="container mt-3 bg-light">
-                <div className="row">
-                    <div className="col-12">
-                        <h2>
-                            My Supplies
-                        </h2>
-                        <br />
-                        <input
-                            type="text"
-                            placeholder="Type item here..."
-                            value={this.state.newItem}
-                            onChange={e => this.updateInput("newItem", e.target.value)}
-                        />
-                        <button className="btn btn-info ml-2"
-                            onClick={() => this.addItem()}
-                        >
-                            Add Item
-                        </button>
-                        <br />
-                        <ul>
-                            {this.state.list.map(item => {
-                                return (
-                                    <li key={item.id}>
-                                        {item.value}
-                                        <button className="btn btn-danger mt-2 ml-5"
-                                            onClick={() => this.deleteItem(item.id)}
-                                        >
-                                            X
-                                </button>
+                    var supplies = obj.supplies;
+                    return (
+                        <div className="container mt-2" key={index}>
+                            <div className="card text-center">
+                                <div className="card-body">
+                                    <h3>{name}</h3>
+                                    <ul>
+                                        {supplies.map((supply, idx) => {
+                                            return (
 
-                                    </li>
-                                )
-                            })}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        )
-    }
-}
+                                                <li key={idx} >
+                                                    
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" /><span className="checkbox-material mr-2"><span className="check"></span></span> {supply}
+                                                            </label>
+                                                            </div>
+                                                            
+                                                    </li>
+                                                    
+                                                    )
+                                                })
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
 
+                            )
+                    }) : "loading..."
+        
+                )
+            }
+        }
+        
+        /*
+        
+                                        */
+        

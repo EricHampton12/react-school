@@ -18,7 +18,7 @@
         },
         {
                 "name":"First Grade",
-                "description": "this is kindergarten",
+                "description": "this is 1st Grade",
                 "supplies": [
                     "8 ct. Crayola Classic Thick Markers",
                     "Red Plastic 3 prong pocket folder",
@@ -27,7 +27,7 @@
                     "2 packages Baby wipes soft pack 80ct",
                     "Box of Gallon sized resealable Ziploc Bags",
                     "Box of sandwich-sized resealable plastic bags",
-                    "1 package of Expo black fine tip (THIN) whiteboard markers",
+                    "1 package of Expo black fine tip whiteboard markers",
                     "1 package of Expo black whiteboard markers (regular)",
                     "1 Prang Washable Watercolor set with brush, 8 ct",
                     "Box of 24 Ticonderoga no. 2 pencils",
@@ -39,7 +39,7 @@
         },
         {
                 "name":"Second Grade",
-                "description": "this is kindergarten",
+                "description": "this is 2nd Grade",
                 "supplies": [
                     "1 Box of Kleenex Tissues",
                     "1 Container of Baby Wipes",
@@ -66,7 +66,7 @@
             },
             {
                 "name":"Third Grade",
-                "description": "this is kindergarten",
+                "description": "this is 3rd Grade",
                 "supplies": [
                     "1 Mead composition book",
                     "3 packages of pencils (Ticonderoga Brand only)",
@@ -91,7 +91,7 @@
             },
             {
                 "name":"Fourth Grade",
-                "description": "this is kindergarten",
+                "description": "this is 4th Grade",
                 "supplies": [
                     "1, 2 Pocket Homework Folder (student choice--not one of the colors listed below)",
                     "1 Pack 3x5 notecards",
@@ -112,7 +112,7 @@
                     "1 box of Ziploc bags ■ Sandwich Size ■Gallon Size ■ Snack Size",
                     "1 small whiteboard eraser or clean sock",
                     "Headphones or earbuds (to use with computers)",
-                    "4 Plastic , 2-pocket folders in the following colors: ○ Red ○ Blue ○ Yellow ○ Green"
+                    "4 Plastic , 2-pocket folders in the following colors: Red, Blue, Yellow, Green."
                 ]
             }
     ]

@@ -1,36 +1,31 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 
-
-
 export default class Register extends Component {
     constructor(props) {
         super(props);
         this.state = { name: '', email: '', password: '', token: '', user: null };
-
         this.handleChange1 = this.handleChange1.bind(this);
         this.handleChange2 = this.handleChange2.bind(this);
         this.handleChange3 = this.handleChange3.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+
     }
     handleChange1(e) {
         this.setState({
             name: e.target.value
 
         })
-        console.log("holy");
     }
     handleChange2(e) {
         this.setState({
             email: e.target.value
         })
-        console.log("crap");
     }
     handleChange3(e) {
         this.setState({
             password: e.target.value
         })
-        console.log("it works");
     }
     handleSubmit(e) {
         e.preventDefault();
@@ -47,6 +42,10 @@ export default class Register extends Component {
                     token: response.data.token,
                     user: response.data.user
                 })
+                localStorage.setItem('user_token', response.data.token);
+                localStorage.setItem('user', JSON.stringify(response.data.user));
+
+                this.props.GetToken()
             }
         });
     }
@@ -67,8 +66,10 @@ export default class Register extends Component {
                                 <input onChange={this.handleChange3} type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
                             </div>
                             <div className="form-group form-check">
+
                                 <button type="submit" className="btn btn-info mb-3">Make Account
                                 </button>
+
                             </div>
                         </form>
                     </div>
